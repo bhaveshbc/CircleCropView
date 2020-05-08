@@ -125,7 +125,7 @@ public class CropViewController: UIViewController {
     }
 
     @objc func backClick(sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 
     @objc func okClick(sender: UIButton) {
