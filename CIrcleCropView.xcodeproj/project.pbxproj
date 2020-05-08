@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C491AC5246526B700C0AB99 /* CircleCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C491AC4246526B700C0AB99 /* CircleCropView.swift */; };
+		7C491AC82465282100C0AB99 /* CircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C491AC72465282100C0AB99 /* CircleCropViewController.swift */; };
+		7C491ACA24652B5E00C0AB99 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C491AC924652B5E00C0AB99 /* ImagePicker.swift */; };
+		7C491AD92465331600C0AB99 /* WhiteGrid.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C491ACE24652EB400C0AB99 /* WhiteGrid.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7C491ADA2465348400C0AB99 /* WhiteGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C491ACE24652EB400C0AB99 /* WhiteGrid.png */; };
+		7C491ADB24653F9000C0AB99 /* CIrcleCropView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2779F2463D50C009183CA /* CIrcleCropView.framework */; };
+		7C491ADC24653F9000C0AB99 /* CIrcleCropView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2779F2463D50C009183CA /* CIrcleCropView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CA277A42463D50C009183CA /* CIrcleCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA277A22463D50C009183CA /* CIrcleCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CA277B12463D582009183CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA277B02463D582009183CA /* AppDelegate.swift */; };
 		7CA277B32463D582009183CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA277B22463D582009183CA /* SceneDelegate.swift */; };
@@ -16,7 +23,35 @@
 		7CA277BD2463D589009183CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA277BB2463D589009183CA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7C491AD62465325C00C0AB99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C491AD92465331600C0AB99 /* WhiteGrid.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C491ADD24653F9000C0AB99 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C491ADC24653F9000C0AB99 /* CIrcleCropView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7C491AC4246526B700C0AB99 /* CircleCropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCropView.swift; sourceTree = "<group>"; };
+		7C491AC72465282100C0AB99 /* CircleCropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCropViewController.swift; sourceTree = "<group>"; };
+		7C491AC924652B5E00C0AB99 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7C491ACE24652EB400C0AB99 /* WhiteGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteGrid.png; path = Resource/WhiteGrid.png; sourceTree = "<group>"; };
 		7CA2779F2463D50C009183CA /* CIrcleCropView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CIrcleCropView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA277A22463D50C009183CA /* CIrcleCropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIrcleCropView.h; sourceTree = "<group>"; };
 		7CA277A32463D50C009183CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,18 +77,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C491ADB24653F9000C0AB99 /* CIrcleCropView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C491AD124652F3C00C0AB99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CA277952463D50C009183CA = {
 			isa = PBXGroup;
 			children = (
 				7CA277A12463D50C009183CA /* CIrcleCropView */,
 				7CA277AF2463D582009183CA /* CropViewExample */,
 				7CA277A02463D50C009183CA /* Products */,
+				7C491AD124652F3C00C0AB99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +113,11 @@
 		7CA277A12463D50C009183CA /* CIrcleCropView */ = {
 			isa = PBXGroup;
 			children = (
+				7C491ACE24652EB400C0AB99 /* WhiteGrid.png */,
 				7CA277A22463D50C009183CA /* CIrcleCropView.h */,
 				7CA277A32463D50C009183CA /* Info.plist */,
+				7C491AC72465282100C0AB99 /* CircleCropViewController.swift */,
+				7C491AC4246526B700C0AB99 /* CircleCropView.swift */,
 			);
 			path = CIrcleCropView;
 			sourceTree = "<group>";
@@ -85,6 +132,7 @@
 				7CA277B92463D589009183CA /* Assets.xcassets */,
 				7CA277BB2463D589009183CA /* LaunchScreen.storyboard */,
 				7CA277BE2463D589009183CA /* Info.plist */,
+				7C491AC924652B5E00C0AB99 /* ImagePicker.swift */,
 			);
 			path = CropViewExample;
 			sourceTree = "<group>";
@@ -111,6 +159,7 @@
 				7CA2779B2463D50C009183CA /* Sources */,
 				7CA2779C2463D50C009183CA /* Frameworks */,
 				7CA2779D2463D50C009183CA /* Resources */,
+				7C491AD62465325C00C0AB99 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -128,6 +177,7 @@
 				7CA277AA2463D582009183CA /* Sources */,
 				7CA277AB2463D582009183CA /* Frameworks */,
 				7CA277AC2463D582009183CA /* Resources */,
+				7C491ADD24653F9000C0AB99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +200,7 @@
 				TargetAttributes = {
 					7CA2779E2463D50C009183CA = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					7CA277AD2463D582009183CA = {
 						CreatedOnToolsVersion = 11.1;
@@ -180,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C491ADA2465348400C0AB99 /* WhiteGrid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C491AC82465282100C0AB99 /* CircleCropViewController.swift in Sources */,
+				7C491AC5246526B700C0AB99 /* CircleCropView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA277B52463D582009183CA /* ViewController.swift in Sources */,
+				7C491ACA24652B5E00C0AB99 /* ImagePicker.swift in Sources */,
 				7CA277B12463D582009183CA /* AppDelegate.swift in Sources */,
 				7CA277B32463D582009183CA /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +413,7 @@
 		7CA277A82463D50D009183CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BR8PZ764HJ;
@@ -366,6 +422,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CIrcleCropView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,14 +431,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bhavesh.CIrcleCropView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7CA277A92463D50D009183CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BR8PZ764HJ;
@@ -390,6 +450,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CIrcleCropView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,8 +459,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bhavesh.CIrcleCropView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -410,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR8PZ764HJ;
 				INFOPLIST_FILE = CropViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR8PZ764HJ;
 				INFOPLIST_FILE = CropViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
