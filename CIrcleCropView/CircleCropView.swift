@@ -1,6 +1,6 @@
 //
 //  CircleCropView.swift
-//  CIrcleCropView
+//  CIrcleCropView Test
 //
 //  Created by Bhavesh Chaudhari on 08/05/20.
 //  Copyright © 2020 Bhavesh. All rights reserved.
