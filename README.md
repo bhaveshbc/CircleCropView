@@ -16,5 +16,11 @@
 
 
 Copy and pasting code sucks, even more when you find a bug and have to fix all the apps using it. But is there a way to avoid it?
-yes there is apple intorude feature called # frameworks 
+yes there is, apple intorude feature called # frameworks 
+
+# What is Framework
+
+A framework is a modular and reusable set of code that is used as the building blocks of higher-level pieces of software.
+
+
 
