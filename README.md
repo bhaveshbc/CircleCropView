@@ -14,3 +14,7 @@
 * Crop Circular portion from Image
 
 
+
+Copy and pasting code sucks, even more when you find a bug and have to fix all the apps using it. But is there a way to avoid it?
+yes there is apple intorude feature called # frameworks 
+
