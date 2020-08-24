@@ -28,5 +28,11 @@ Let’s open Xcode and create a new project. Select the iOS tab, scroll down to 
 
 ![Test Image 5](https://miro.medium.com/max/624/1*AWtcOjbkA5nikOnnjQjOiQ.png)
 
+create new swift file and name it circleCropView.select Cocoa Touch Class and then select UIView from the drop down. I’m naming it CircleCropView.
+
+![Test Image 6](https://miro.medium.com/max/624/1*oJZtpa00tbogUvagAGFAww.png)
+
+
+
 
 
