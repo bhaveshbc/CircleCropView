@@ -73,5 +73,12 @@ create new swift file and name it circleCropView.select Cocoa Touch Class and th
 
 Voila! We have a framework, and it didn’t take too long to put it all together!
 
+# How to use it.
+
+Go to your Project Inspector’s General tab and scroll down to where it says, “Embedded Binaries.” Click the + button and then Add Other. A Finder window will drop down, and here you need to select the CircleCropView.xcodeproj framework that we created earlier. You’ll notice that our Framework was added to the Project Navigator!
+
+Now go back to Embedded Binaries and click the + button again. This time you will see the framework that we added! Click on it to add it to the project’s Embedded Binaries.
+Give the project a quick build (command+B) to make sure that things are going well so far! There shouldn’t be any errors yet.
+
 
 
