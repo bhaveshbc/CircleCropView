@@ -33,6 +33,43 @@ create new swift file and name it circleCropView.select Cocoa Touch Class and th
 ![Test Image 6](https://miro.medium.com/max/624/1*oJZtpa00tbogUvagAGFAww.png)
 
 
+class CircleCropView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.black.withAlphaComponent(0.58)
+        isUserInteractionEnabled = false
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    var circleInset: CGRect {
+        let rect = bounds
+        let minSize = min(rect.width, rect.height)
+        let hole = CGRect(x: (rect.width - minSize) / 2, y: (rect.height - minSize) / 2, width: minSize, height: minSize).insetBy(dx: 15, dy: 15)
+        return hole
+    }
+    
+    override func draw(_ rect: CGRect) {
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+        context.saveGState()
+        
+        let holeInset = circleInset
+        
+        context.addEllipse(in: holeInset);
+        context.clip();
+        context.clear(holeInset);
+        context.draw(UIImage(named: "WhiteGrid.png")!.cgImage!, in: holeInset)
+        context.setFillColor( UIColor.clear.cgColor);
+        context.fill( holeInset);
+        context.setStrokeColor(UIColor.white.cgColor)
+        context.strokeEllipse(in: holeInset)
+        context.restoreGState()
+    }
+}
+
+
 
 
 
