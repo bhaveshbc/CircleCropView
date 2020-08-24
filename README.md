@@ -32,7 +32,7 @@ create new swift file and name it circleCropView.select Cocoa Touch Class and th
 
 ![Test Image 6](https://miro.medium.com/max/624/1*oJZtpa00tbogUvagAGFAww.png)
 
-
+```swift
   class CircleCropView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -68,6 +68,8 @@ create new swift file and name it circleCropView.select Cocoa Touch Class and th
         context.restoreGState()
     }
 }
+
+```
 
 
 
