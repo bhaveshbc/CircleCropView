@@ -33,7 +33,7 @@ create new swift file and name it circleCropView.select Cocoa Touch Class and th
 ![Test Image 6](https://miro.medium.com/max/624/1*oJZtpa00tbogUvagAGFAww.png)
 
 
-class CircleCropView: UIView {
+  class CircleCropView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.black.withAlphaComponent(0.58)
