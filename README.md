@@ -71,7 +71,7 @@ create new swift file and name it circleCropView.select Cocoa Touch Class and th
 
 ```
 
-
+Voila! We have a framework, and it didn’t take too long to put it all together!
 
 
 
