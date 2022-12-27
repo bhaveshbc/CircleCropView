@@ -16,7 +16,7 @@ public class CircleCropView: UIView {
         super.init(frame: frame)
         self.backgroundColor = UIColor.black.withAlphaComponent(0.58)
         isUserInteractionEnabled = false
-        isUserInteractionEnabled = false
+        isUserInteractionEnabled = true
     }
 
     required init?(coder aDecoder: NSCoder) {
