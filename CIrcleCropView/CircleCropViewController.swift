@@ -130,6 +130,7 @@ public class CropViewController: UIViewController {
 
     @objc func okClick(sender: UIButton) {
         self.cropImage()
+        print("Changed For testing")
     }
 
     private func cropImage() {
